@@ -1,0 +1,2785 @@
+/*Стили текста*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*Стили текста*/
+
+
+
+/*Правила*/
+h2 {
+    cursor:default;
+}
+a,p{
+    text-decoration: none;
+    color: white;
+}
+/*Правила*/
+
+
+
+/*Задний фон*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 130vh;
+    overflow-x: hidden;
+}
+.Waterpl{
+    z-index: 0;
+    position: absolute;
+    top: -1%;
+    width: 100% ;   
+    height: 1000px;
+    opacity: 0.9;
+}
+.Шапка{
+    position: absolute;
+}
+header{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+a,p{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*Шапка сайта*/
+.Шапка{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 240px;
+    height: 80px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.Шапка:hover{
+    cursor: default;
+}
+.Logo{
+    width: 70px;
+    height: 70px;
+}
+.YTECH{
+    font-family: 'Orbitron',cursive;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+}
+/*Шапки*/
+
+
+
+/*ОПЦИИ*/
+.Опции{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap:80px;
+    margin-top: 50px;
+    margin-left: 65%;
+    margin-right: 140px;
+}
+.ABOUTUS, .PROJECT, .QUALITY {
+    white-space: nowrap;
+    z-index: 1;
+    font-family: 'Orbitron', cursive;
+    font-size: medium;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.8s, filter 0.8s;
+}
+.ABOUTUS:hover, .PROJECT:hover, .QUALITY:hover {
+    font-size: larger;
+    filter: brightness(0.8);
+    transition-delay: 0.1s;
+}
+
+.ABOUTUS:not(:hover), .PROJECT:not(:hover), .QUALITY:not(:hover) {
+    transition-delay: 0s; 
+}
+/*КОНЕЦ ШАПКИ*/
+
+
+
+/*СТАТЬЯ*/
+.Save{
+    font-family: 'Orbitron' , cursive ;
+    font-weight:bold;
+    color: white;
+    position: relative;
+    margin-left: 130px;
+    margin-top: 180px;
+}
+.Etc{
+    color: white;
+    font-family: 'Outfit' , cursive;
+    font-weight: normal;
+    position: relative;
+    text-align: left;
+    margin-left: 130px;
+    font-size: x-small;
+    width: 40%;
+    margin-bottom: 40px;
+}
+.Etc:hover{
+    cursor: default;
+}
+.moredetails {
+    text-decoration: none;
+    margin-left: 130px;
+    position: relative;
+    background-color: #002A40;
+    opacity: 0.9;
+    display: inline-block;
+    padding: 3px 68px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.str {
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    margin-left: 39%;
+    margin-top: -16%;
+    opacity: 0;
+    transition: opacity 0.8s, transform 1.2s;
+}
+
+.more {
+    text-decoration: none;
+}
+
+.More {
+    color: white;
+    font-weight: bold;
+    font-family: 'Outfit', cursive;
+    text-decoration: none;
+    font-size: medium;
+    transition: transform 1s, color 1s;
+}
+
+.moredetails:hover .More {
+    transform: translateX(-18px);
+    color: rgb(218, 218, 218);
+    transition-delay: 0.1s;
+}
+
+.moredetails:hover .str {
+    opacity: 1;
+    transform: translateX(-50px);
+    color: rgb(218, 218, 218);
+    transition-delay: 0.1s;
+}
+
+.moredetails:not(:hover) .More {
+    transition-delay: 0s;
+}
+
+.moredetails:not(:hover) .str {
+    transition-delay: 0s;
+}
+/*КОНЕЦ СТАТЬИ*/
+
+
+
+/*ДИАГРАММЫ*/
+.Диаграммы1{
+    position: absolute;
+    display: flex;
+    justify-content:end;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: -320px;
+    margin-left: 84%;
+    margin-right: 120px;
+}
+.diag1,
+.diag2 {
+    width: 110px;
+    height: 110px;
+    transition: width 0.9s, height 0.9s, filter 0.9s;
+}
+
+.diag1:hover,
+.diag2:hover {
+    width: 130px;
+    height: 130px;
+    filter: brightness(0.8);
+    cursor: pointer;
+    transition-delay: 0.1s; /* Задержка перед началом */
+}
+
+.diag1:not(:hover),
+.diag2:not(:hover) {
+    width: 110px;
+    height: 110px;
+    transition-delay: 0s; /* Убираем задержку при уходе курсора */
+}
+/*Конец диграммы1*/
+
+
+
+/*Последствия*/
+.Последствия{
+    display: flex;
+}
+.Иконки{
+    font-family: 'Outfit',cursive;
+}
+.consq{
+    margin-top: 120px;
+    text-decoration: none;
+    margin-left: 130px;
+}
+.cons {
+    font-family: 'Outfit', cursive;
+    opacity: 1;
+    color: white;
+    position: relative;
+    font-size: large;
+    transition: font-size 1s, opacity 1s, margin-top 1s; /* Все анимации с переходом */
+}
+.cons:hover {
+    font-size: 30px;
+    opacity: 0.85;
+    margin-top: 4%;
+    transition-delay: 0.2s; /* Задержка перед началом анимации */
+}
+.cons:not(:hover) {
+    transition: font-size 1s, opacity 1s, margin-top 1s; /* Убираем задержку при уходе курсора */
+}
+
+
+
+/*Кружки*/
+.Иконки{
+    display: flex;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 250px;
+    gap: 40px;
+}
+.i1,.i2,.i3{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+/*Анимации*/
+.i1, .i2, .i3 {
+    margin-left: 5px;
+    transition: transform 1s;
+    cursor: pointer;
+}
+.people, .water, .animals {
+    transition: width 1s, height 1s, opacity 1s, filter 1s;
+}
+.text1, .text2, .text3 {
+    transition: font-size 1s, opacity 1s;
+}
+.i1:hover, .i2:hover, .i3:hover {
+    transform: translateY(-20%);
+    transition-delay: 0.2s; /* Задержка перед анимацией */
+}
+
+.i1:hover .people,
+.i2:hover .water,
+.i3:hover .animals {
+    opacity: 0.85;
+    width: 100px;
+    height: 100px;
+    filter: invert();
+    transition-delay: 0.2s;
+}
+.i1:hover .text1,
+.i2:hover .text2,
+.i3:hover .text3 {
+    font-size: medium;
+    opacity: 0.85;
+    transition-delay: 0.2s;
+}
+.i1:not(:hover), .i2:not(:hover), .i3:not(:hover) {
+    transform: translateY(0%);
+    transition-delay: 0s;
+}
+.i1:not(:hover) .people,
+.i2:not(:hover) .water,
+.i3:not(:hover) .animals {
+    width: 90px;
+    height: 90px;
+    opacity: 1;
+    filter: none;
+    transition-delay: 0s;
+}
+.i1:not(:hover) .text1,
+.i2:not(:hover) .text2,
+.i3:not(:hover) .text3 {
+    font-size: small;
+    opacity: 1;
+    transition-delay: 0s;
+}
+/*Конец анимаций*/
+
+
+/*FOOTER*/
+.f1{
+    display: flex;
+    gap:0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:20%;
+    width: 100%;
+    height: 55%;
+    opacity: 1; 
+    background-color: black;
+}
+.Socialmedia{
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 150px;
+    align-items: start;
+    font-family: 'Outfit',cursive;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    .ourct{
+        font-size: x-large;
+        
+    }
+    .insta{
+        width: 50px;
+        height: 50px;
+    }
+    .instagramm{
+        display: flex;
+        flex-direction:row ;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+        font-size: medium;
+        margin-left: -10px;
+        gap:10px
+    }
+    .linkins{
+        margin-bottom: 5px;
+    }
+    .phone{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -10px;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .phn{
+        width: 50px;
+        height: 50px;
+    }
+    .number{
+        font-weight: normal;
+        font-size: x-small;
+    }
+}
+
+.instagramm:hover,.phone:hover{
+    .insta{
+        width:60px;
+        height: 60px;
+        filter: invert();
+        transition: 1s;
+    }
+    .phn{
+        width: 57px;
+        height: 57px;
+        filter: invert();
+        transition: 1s;
+    }
+    .number{
+        font-size: medium;
+        transition: 0.9s;
+    }
+    font-size: 22px;
+    filter: brightness(0.8);
+    transition: 0.9s;
+    cursor: pointer;
+}
+.instagramm:not(:hover),.phone:not(:hover){
+    transition: 1s;
+    .phn{
+        width: 50px;
+        height: 50px;
+        transition: 0.9s;
+    }
+    .insta{
+        width: 50px;
+        height: 50px;
+        transition: 0.9s;
+    }
+    .number{
+        font-size: small;
+        transition: 0.9s;
+    }
+}
+
+.Email{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+    font-weight: bold;
+    font-family: 'Outfit',cursive;
+}
+.email1,.email2{
+    display: flex;
+    margin-top: -10px;
+    line-height: 70px;
+    font-weight:normal;
+}
+.email{
+    font-size: x-large;
+}
+.email:hover{
+    cursor: pointer;
+}
+.email1:hover,.email2:hover{
+    font-size:23px ;
+    filter: brightness(0.8);
+    transition: 1s;
+}
+.email1:not(:hover),.email2:not(:hover){
+    transition: 1s;
+}
+.ABOUTUS,.PROJECT,.QUALITY{
+    padding-left: 10px;
+}
+
+/*Адаптация*/
+@media( min-width:1900px) and (max-width:2000px){
+    .Диаграммы1{
+        margin-left:88%;
+    }
+}
+@media( min-width:1800px) and (max-width:1900px){
+    .Диаграммы1{
+        margin-left: 87%;
+    }
+}
+@media( min-width:1700px) and (max-width:1800px){
+    .Диаграммы1{
+        margin-left: 86%;
+    }
+}
+@media( min-width:1600px) and ( max-width:1700px){
+    .Диаграммы1{
+        margin-left: 85%;
+    }
+}
+@media( min-width:1500px) and (max-width:1600px){
+    .Диаграммы1{
+        margin-left: 84%;
+    }
+}
+@media(min-width:1400px) and (max-width:1500px){
+    .Диаграммы1{
+        margin-left: 83%;
+        margin-top: -350px;
+    }
+}
+@media(min-width:1300px) and (max-width:1400px){
+    .Диаграммы1{
+        margin-left: 82%;
+        margin-top: -350px;
+    }
+}
+@media(min-width:1200px) and (max-width:1300px){
+    .Диаграммы1{
+        margin-left: 81%;
+        margin-top: -350px;
+    }
+}
+@media(min-width:1150px) and (max-width:1200px){
+    .Диаграммы1{
+        margin-left: 80%;
+        margin-top: -350px;
+    }
+}
+@media(min-width:1000px) and (max-width:1150px){
+    body{
+        height: 120vh;
+    }
+    .Опции{
+        gap: 30px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+        font-size: small;
+    }
+    .Logo{
+        width: 50px;
+        height: 50px;
+    }
+    .YTECH{
+        font-size:large;
+    }
+    .Статья{
+        margin-top: -30px;
+    }
+    .Etc{
+        font-size: 13px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        margin-left: 80%;
+        margin-top: -320px;
+        .diag1,
+        .diag2{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .consq{
+        margin-top: 30px;
+    }
+    .Иконки{
+        margin-top: 120px;
+    }
+    .cons{
+        font-size: medium;
+    }
+    .Иконки{
+        .i1{
+            .text1{
+                font-size: x-small;
+            }
+            .people{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i2{
+            .text2{
+                font-size: x-small;
+            }
+            .water{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i3{
+            .text3{
+                font-size: x-small;
+            }
+            .animals{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+@media(min-width:900px) and (max-width:1000px){
+    body{
+        height: 120vh;
+    }
+    .Опции{
+        margin-right: 120px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+        font-size: small;
+    }
+    .Logo{
+        width: 50px;
+        height: 50px;
+    }
+    .YTECH{
+        font-size:large;
+    }
+    .Статья{
+        margin-top: -30px;
+    }
+    .Etc{
+        font-size: 13px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        margin-left: 80%;
+        margin-top: -330px;
+        .diag1,
+        .diag2{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .consq{
+        margin-top: 50px;
+    }
+    .Иконки{
+        margin-top: 150px;
+    }   
+    .Socialmedia{
+        margin-left: 90px;
+        width: 200px;
+        .ourct{
+            font-size: large;
+        }
+        .instagramm{
+            .insta{
+                width: 40px;
+                height: 40px;
+            }
+            .linkins{
+                font-size: small;
+            }
+        }
+        .phone{
+            .phn{
+                width: 40px;
+                height: 40px;
+            }
+            .number{
+                font-size: x-small;
+            }
+        }
+    }
+    .Email{
+        margin-right: 90px;
+        .email{
+            font-size: large;
+        }
+        .email1{
+            font-size: small;
+        }
+        .email2{
+            font-size: small;
+        }
+    }
+    .Опции{
+        gap: 25px;
+        .ABOUTUS,.PROJECT,.QUALITY{
+            font-size: small;
+        }
+    }
+    .consq{
+        margin-top: 30px;
+    }
+    .Иконки{
+        margin-top: 110px;
+    }
+    .cons{
+        font-size: medium;
+    }
+    .Иконки{
+        .i1{
+            .text1{
+                font-size: x-small;
+            }
+            .people{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i2{
+            .text2{
+                font-size: x-small;
+            }
+            .water{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i3{
+            .text3{
+                font-size: x-small;
+            }
+            .animals{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+@media(min-width:800px) and (max-width:900px){
+    body{
+        height: 120vh;
+    }
+    .Опции{
+        margin-right: 100px;
+    }
+    .Шапка{
+        margin-left: 70px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+        font-size: small;
+    }
+    .Logo{
+        width: 50px;
+        height: 50px;
+    }
+    .YTECH{
+        font-size:large;
+    }
+    .Статья{
+        margin-left: -50px;
+        margin-top: -30px;
+    }
+    .Etc{
+        font-size: 13px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        margin-left: 79%;
+        margin-top: -300px;
+        .diag1,
+        .diag2{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .consq{
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+    .Иконки{
+        margin-left: 90px;
+        margin-top: 150px;
+    }   
+    .Socialmedia{
+        margin-top: 30px;
+        margin-left: 90px;
+        width: 200px;
+        .ourct{
+            font-size: large;
+        }
+        .instagramm{
+            .insta{
+                width: 40px;
+                height: 40px;
+            }
+            .linkins{
+                font-size: small;
+            }
+        }
+        .phone{
+            .phn{
+            width: 40px;
+            height: 40px;
+            }
+            .number{
+            font-size: x-small;
+            }
+        }
+    }
+    .Email{
+        margin-top: 30px;
+        margin-right: 90px;
+        .email{
+            font-size: large;
+        }
+        .email1{
+            font-size: small;
+        }
+        .email2{
+            font-size: small;
+        }
+    }
+    .Опции{
+        gap: 25px;
+        .ABOUTUS,.PROJECT,.QUALITY{
+            font-size: small;
+        }
+    }
+    .Save{
+        font-size: large;
+    }
+    .Etc {
+        font-size: xx-small;
+        width: 40%;
+        text-align: justify;
+    }
+    .moredetails{
+        width: 170px;
+        height: 50px;
+        padding: 0px 40px;
+        .More{
+            font-size: x-small;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .str{
+            margin-left: 55%;
+            margin-top: -19%;
+            font-size: x-small;
+        }
+    }
+    .consq{
+        margin-top: 30px;
+    }
+    .Иконки{
+        margin-top: 110px;
+    }
+    .cons{
+        font-size: medium;
+    }
+    .Иконки{
+        .i1{
+            .text1{
+                font-size: x-small;
+            }
+            .people{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i2{
+            .text2{
+                font-size: x-small;
+            }
+            .water{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i3{
+            .text3{
+                font-size: x-small;
+            }
+            .animals{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+@media(min-width:700px) and (max-width:800px){
+    body{
+        height: 120vh;
+    }
+    .Шапка{
+        margin-left: 70px;
+        gap: 20px;
+    }
+    .Опции{
+        margin-right: 80px;
+        gap: 10px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+    }
+    .Logo{
+        width: 40px;
+        height: 40px;
+    }
+    .YTECH{
+        font-size:medium;
+    }
+    .Статья{
+        margin-left:-50px;
+        margin-top: -30px;
+    }
+    .Etc{
+        font-size: 13px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        margin-left: 79%;
+        margin-top: -320px;
+        .diag1,
+        .diag2{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .consq{
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+    .Иконки{
+        margin-left: 80px;
+        margin-top: 150px;
+    }   
+    .Socialmedia{
+        margin-top: 100px;
+        margin-left:100px;
+        width: 200px;
+        .ourct{
+            font-size: medium;
+        }
+        .instagramm{
+            .insta{
+                width: 40px;
+                height: 40px;
+            }
+            .linkins{
+                font-size: x-small;
+            }
+        }
+        .phone{
+            .phn{
+            width: 40px;
+            height: 40px;
+            }
+            .number{
+            font-size: x-small;
+            }
+        }
+    }
+    .Email{
+        margin-top: 100px;
+        margin-right: 100px;
+        .email{
+            font-size: medium;
+        }
+        .email1{
+            font-size: x-small;
+        }
+        .email2{
+            font-size: x-small;
+        }
+    }
+    .Опции{
+        gap: 25px;
+        .ABOUTUS,.PROJECT,.QUALITY{
+            font-size: small;
+        }
+    }
+    .Save{
+        font-size: large;
+    }
+    .Etc {
+        font-size: 12px;
+        width: 40%;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    .moredetails{
+        width: 170px;
+        height: 50px;
+        padding: 0px 40px;
+        .More{
+            font-size: x-small;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .str{
+            margin-left: 55%;
+            margin-top: -19%;
+            font-size: x-small;
+        }
+    }
+    .consq{
+        margin-top: 30px;
+    }
+    .Иконки{
+        margin-top: 110px;
+    }
+    .cons{
+        font-size: medium;
+    }
+    .Иконки{
+        .i1{
+            .text1{
+                font-size: x-small;
+            }
+            .people{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i2{
+            .text2{
+                font-size: x-small;
+            }
+            .water{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i3{
+            .text3{
+                font-size: x-small;
+            }
+            .animals{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+@media(min-width:600px) and (max-width:700px){
+    body{
+        height: 120vh;
+    }
+    .Шапка{
+        margin-left: 35px;
+        gap: 20px;
+    }
+    .Опции{
+        margin-right: 50px;
+        gap: 10px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+    }
+    .Logo{
+        width: 40px;
+        height: 40px;
+    }
+    .YTECH{
+        font-size:21px;
+    }
+    .Статья{
+        margin-left:-90px;
+        margin-top: -50px;
+    }
+    .Etc{
+        font-size: 10px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        margin-left: 78%;
+        margin-top: -300px;
+        .diag1,
+        .diag2{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .consq{
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+    .Иконки{
+        margin-left: 50px;
+        margin-top: 180px;
+    }   
+    .Socialmedia{
+        margin-top: 100px;
+        margin-left:70px;
+        width: 200px;
+        .ourct{
+            font-size: small;
+        }
+        .instagramm{
+            .insta{
+                width: 40px;
+                height: 40px;
+            }
+            .linkins{
+                font-size: xx-small;
+            }
+        }
+        .phone{
+            .phn{
+            width: 40px;
+            height: 40px;
+            }
+            .number{
+            font-size: xx-small;
+            }
+        }
+    }
+    .Email{
+        margin-top: 100px;
+        margin-right: 80px;
+        .email{
+            font-size:small;
+        }
+        .email1{
+            font-size: xx-small;
+        }
+        .email2{
+            font-size: xx-small;
+        }
+    }
+    .Опции{
+        gap: 25px;
+        .ABOUTUS,.PROJECT,.QUALITY{
+            font-size: 16px;
+        }
+    }
+    .Save{
+        font-size: large;
+    }
+    .Etc {
+        font-size: 12px;
+        width: 40%;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    .moredetails{
+        width: 170px;
+        height: 50px;
+        padding: 0px 40px;
+        .More{
+            font-size: x-small;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .str{
+            margin-left: 55%;
+            margin-top: -19%;
+            font-size: x-small;
+        }
+    }
+    .consq{
+        margin-top: 50px;
+    }
+    .Иконки{
+        margin-top: 140px;
+    }
+    .cons{
+        font-size: medium;
+    }
+    .Иконки{
+        .i1{
+            .text1{
+                font-size: x-small;
+            }
+            .people{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i2{
+            .text2{
+                font-size: x-small;
+            }
+            .water{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i3{
+            .text3{
+                font-size: x-small;
+            }
+            .animals{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+@media(min-width:580px) and (max-width:600px){
+    body{
+    height: 120vh;
+}
+.Шапка{
+    margin-left: 35px;
+    gap: 20px;
+}
+.Опции{
+    margin-right: 50px;
+    gap: 10px;
+}
+.ABOUTUS,.PROJECT,.QUALITY{
+    margin-top: 5px;
+}
+.Logo{
+    width: 40px;
+    height: 40px;
+}
+.YTECH{
+    font-size:21px;
+}
+.Статья{
+    margin-left:-90px;
+    margin-top: -50px;
+}
+.Etc{
+    font-size: 10px;
+}
+.Waterpl{
+    width: 100%;
+    height: 800px;
+}
+.Диаграммы1{
+    margin-left: 77%;
+    margin-top: -320px;
+    .diag1,
+    .diag2{
+        width: 80px;
+        height: 80px;
+    }
+}
+.consq{
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.Иконки{
+    margin-left: 50px;
+    margin-top: 180px;
+}   
+.Socialmedia{
+    margin-top: 100px;
+    margin-left:70px;
+    width: 200px;
+    .ourct{
+        font-size: small;
+    }
+    .instagramm{
+        .insta{
+            width: 40px;
+            height: 40px;
+        }
+        .linkins{
+            font-size: xx-small;
+        }
+    }
+    .phone{
+        .phn{
+        width: 40px;
+        height: 40px;
+        }
+        .number{
+        font-size: x-small;
+        }
+    }
+}
+.Email{
+    margin-top: 105px;
+    margin-right: 70px;
+    .email{
+        font-size:small;
+    }
+    .email1{
+        font-size: xx-small;
+    }
+    .email2{
+        font-size: xx-small;
+    }
+}
+.Опции{
+    gap: 25px;
+    .ABOUTUS,.PROJECT,.QUALITY{
+        font-size: 16px;
+    }
+}
+.Save{
+    font-size: large;
+}
+.Etc {
+    font-size: 12px;
+    width: 40%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.moredetails{
+    width: 170px;
+    height: 50px;
+    padding: 0px 40px;
+    .More{
+        font-size: x-small;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .str{
+        margin-left: 55%;
+        margin-top: -19%;
+        font-size: x-small;
+    }
+}
+.consq{
+    margin-top: 50px;
+}
+.Иконки{
+    margin-top: 140px;
+}
+.cons{
+    font-size: medium;
+}
+.Иконки{
+    .i1{
+        .text1{
+            font-size: x-small;
+        }
+        .people{
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .i2{
+        .text2{
+            font-size: x-small;
+        }
+        .water{
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .i3{
+        .text3{
+            font-size: x-small;
+        }
+        .animals{
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+}
+@media(min-width:550px) and (max-width:580px){
+    body{
+        height: 150vh;
+    }
+    .Шапка{
+        margin-left: 35px;
+        gap: 15px;
+    }
+    .Опции{
+        margin-right: 50px;
+        gap: 10px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+        font-size: 5px;
+    }
+    .Logo{
+        width: 40px;
+        height: 40px;
+    }
+    .YTECH{
+        font-size:21px;
+    }
+    .Статья{
+        margin-left:-90px;
+        margin-top: -50px;
+    }
+    .Etc{
+        font-size: 10px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        margin-left: 76%;
+        margin-top: -280px;
+        .diag1,
+        .diag2{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .consq{
+        margin-left: 50px;
+        margin-top: 60px;
+    }
+    .Иконки{
+        margin-left: 50px;
+        margin-top: 180px;
+    }   
+    .Socialmedia{
+        margin-top: 150px;
+        margin-left:70px;
+        width: 200px;
+        .ourct{
+            font-size: small;
+        }
+        .instagramm{
+            .insta{
+                width: 40px;
+                height: 40px;
+            }
+            .linkins{
+                font-size: xx-small;
+            }
+        }
+        .phone{
+            .phn{
+            width: 40px;
+            height: 40px;
+            }
+            .number{
+            font-size: x-small;
+            }
+        }
+    }
+    .Email{
+        margin-top: 160px;
+        margin-right: 80px;
+        .email{
+            font-size:small;
+        }
+        .email1{
+            font-size: xx-small;
+        }
+        .email2{
+            font-size: xx-small;
+        }
+    }
+    .Опции{
+        gap: 15px;
+        .ABOUTUS,.PROJECT,.QUALITY{
+            font-size: 13px;
+        }
+    }
+    .Save{
+        font-size: medium;
+    }
+    .Etc {
+        font-size: 10px;
+        width: 40%;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    .moredetails{
+        width: 170px;
+        height: 50px;
+        padding: 0px 35px;
+        .More{
+            font-size: x-small;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .str{
+            margin-left: 55%;
+            margin-top: -19%;
+            font-size: x-small;
+        }
+    }
+    .consq{
+        margin-top: 50px;
+    }
+    .Иконки{
+        margin-top: 140px;
+    }
+    .cons{
+        font-size: medium;
+    }
+    .Иконки{
+        .i1{
+            .text1{
+                font-size: x-small;
+            }
+            .people{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i2{
+            .text2{
+                font-size: x-small;
+            }
+            .water{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .i3{
+            .text3{
+                font-size: x-small;
+            }
+            .animals{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+@media( min-width:450px) and (max-width:550px){
+    body{
+    height: 120vh;
+}
+.Шапка{
+    margin-left: 35px;
+    gap: 15px;
+}
+.Опции{
+    margin-right: 50px;
+    gap: 10px;
+}
+.ABOUTUS,.PROJECT,.QUALITY{
+    margin-top: 5px;
+    font-size: 5px;
+}
+.Logo{
+    width: 40px;
+    height: 40px;
+}
+.YTECH{
+    font-size:21px;
+}
+.Статья{
+    margin-left:-90px;
+    margin-top: -50px;
+}
+.Etc{
+    font-size: 10px;
+}
+.Waterpl{
+    width: 100%;
+    height: 800px;
+}
+.Диаграммы1{
+    margin-left: 78%;
+    margin-top: -270px;
+    .diag1,
+    .diag2{
+        width: 60px;
+        height: 60px;
+    }
+}
+.consq{
+    margin-left: 50px;
+    margin-top: 60px;
+}
+.Иконки{
+    margin-left: 50px;
+    margin-top: 180px;
+}   
+.Socialmedia{
+    margin-top: 130px;
+    margin-left:60px;
+    width: 200px;
+    .ourct{
+        font-size: x-small;
+    }
+    .instagramm{
+        .insta{
+            width: 40px;
+            height: 40px;
+        }
+        .linkins{
+            font-size: 11px;
+        }
+    }
+    .phone{
+        .phn{
+        width: 40px;
+        height: 40px;
+        }
+        .number{
+        font-size: 11px;
+        }
+    }
+}
+.Email{
+    line-height: 0px;
+    margin-top: 150px;
+    margin-right: 40px;
+    .email{
+        font-size:x-small;
+    }
+    .email1{
+        font-size: 11px;
+    }
+    .email2{
+        font-size:11px;
+    }
+}
+.Опции{
+    gap: 15px;
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 10px;
+        font-size: 9px;
+    }
+}
+.Save{
+    font-size: medium;
+}
+.Etc {
+    font-size: 10px;
+    width: 40%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.moredetails{
+    width: 170px;
+    height: 50px;
+    padding: 0px 35px;
+    .More{
+        font-size: x-small;
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .str{
+        margin-left: 55%;
+        margin-top: -19%;
+        font-size: x-small;
+    }
+}
+.consq{
+    margin-top: 80px;
+}
+.Иконки{
+    margin-top: 170px;
+}
+.cons{
+    font-size: small;
+}
+.Иконки{
+    .i1{
+        .text1{
+            font-size: xx-small;
+        }
+        .people{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .i2{
+        .text2{
+            font-size: xx-small;
+        }
+        .water{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .i3{
+        .text3{
+            font-size: xx-small;
+        }
+        .animals{
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+}
+@media(min-width:400px) and (max-width:450px){
+    body{
+        height: 70vh;
+        .Waterpl{
+            height: 750px;
+        }
+    }
+    .Шапка{
+        margin-left: 35px;
+        gap: 10px;
+    }
+    .Опции{
+        margin-right: 50px;
+        gap: 10px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+        font-size: 5px;
+    }
+    .Logo{
+        width: 40px;
+        height: 40px;
+    }
+    .YTECH{
+        font-size:21px;
+    }
+    .Статья{
+        margin-left:-90px;
+        margin-top: 100px;
+    }
+    .Etc{
+        font-size: 10px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        .diag1{
+            height: 0px;
+            width: 0px;
+        }
+        .diag2{
+            height: 0px;
+            width: 0px;
+        }
+    }
+    .consq{
+        display: flex;
+        justify-content: center;
+        font-size: 0px;
+    }
+    .cons{
+        margin-left: 20px ;
+        font-size: 0px;
+    }
+    .Иконки{
+        margin-left: 50px;
+        margin-top: 180px;
+    }   
+    .Socialmedia{
+        margin-top: 80px;
+        margin-left:50px;
+        margin-bottom: 80px;
+        width: 200px;
+        .ourct{
+            font-size: xx-small;
+        }
+        .instagramm{
+            .insta{
+                width: 30px;
+                height: 30px;
+            }
+            .linkins{
+                font-size: 10px;
+            }
+        }
+        .phone{
+            .phn{
+            width: 30px;
+            height: 30px;
+            }
+            .number{
+            font-size: 10px;
+            }
+        }
+    }
+    .Email{
+        line-height: 0px;
+        margin-top: 20px;
+        margin-right: 30px;
+        .email{
+            font-size:xx-small;
+        }
+        .email1{
+            font-size: 10px;
+            margin-bottom: -15px;
+        }
+        .email2{
+            font-size:10px;
+        }
+    }
+    .Опции{
+        gap: 15px;
+        .ABOUTUS,.PROJECT,.QUALITY{
+            font-size: 10px;
+        }
+    }
+    .Save{
+        margin-right: -10px;
+        font-size: medium;
+    }
+    .Etc {
+        font-size: 10px;
+        width: 40%;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-right: -10px;
+    }
+    .moredetails{
+        margin-right: -10px;
+        width: 170px;
+        height: 50px;
+        padding: 0px 35px;
+        .More{
+            font-size: x-small;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .str{
+            margin-left: 55%;
+            margin-top: -19%;
+            font-size: x-small;
+        }
+    }
+    .consq{
+        margin-top: 80px;
+    }
+    .Иконки{
+        margin-top: 170px;
+    }
+    .cons{
+        opacity: 1;
+        font-size: small;
+        margin-bottom: 70px;
+    }
+    .Иконки{
+        margin-right: 20px;
+        margin-bottom: 30px;
+        .i1{
+            .text1{
+                font-size:12px;
+                text-align: center;
+                opacity: 1;
+            }
+            .people{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .i2{
+            .text2{
+                opacity: 1;
+                text-align: center;
+                font-size: 12px;
+            }
+            .water{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .i3{
+            .text3{
+                opacity: 1;
+                text-align: center;
+                font-size: 12px;
+            }
+            .animals{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .Шапка {
+        margin-right: 50px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .Опции {
+        margin-left: 10%;
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+    .Статья {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+        margin-left: -32%;
+        margin-top: 5%;
+    }
+    
+    .Etc {
+        width: 50%;
+        text-align: center;
+    }
+    
+    .moredetails {
+        padding: 2px 35px;
+        font-size: 16px;
+    }
+    .Последствия{
+        align-items: center;
+    }
+    .i1,.i2,.i3{
+        margin-top: 100px;
+        margin-right: 20px;
+        .animals{
+            width: 20px;
+            height: 20px;
+        }
+        .water{
+            width: 20px;
+            height: 20px;
+        }
+        .people{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+@media(min-width:370px) and (max-width:400px){
+    body{
+        overflow-x: hidden;
+        height: 150vh;
+        .Waterpl{
+            width: 100%;
+            height: 800px;
+        }
+    }
+    .Шапка{
+        margin-left: 35px;
+        gap: 10px;
+    }
+    .Опции{
+        margin-right: 50px;
+        gap: 10px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+        font-size: 5px;
+    }
+    .Logo{
+        width: 40px;
+        height: 40px;
+    }
+    .YTECH{
+        font-size:21px;
+    }
+    .Статья{
+        margin-left:-90px;
+        margin-top: 100px;
+    }
+    .Etc{
+        font-size: 10px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        .diag1{
+            height: 0px;
+            width: 0px;
+        }
+        .diag2{
+            height: 0px;
+            width: 0px;
+        }
+    }
+    .consq{
+        display: flex;
+        justify-content: center;
+        font-size: 0px;
+    }
+    .cons{
+        margin-left: 20px ;
+        font-size: 0px;
+    }
+    .Иконки{
+        margin-left: 50px;
+        margin-top: 180px;
+    }   
+    .f1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .Socialmedia, .Email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .Socialmedia{
+        margin-right:45%;
+    }
+    .instagramm, .phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .Опции{
+        gap: 15px;
+        .ABOUTUS,.PROJECT,.QUALITY{
+            font-size: 10px;
+        }
+    }
+    .Save{
+        margin-right: 20px ;
+        font-size: medium;
+    }
+    .Etc {
+        font-size: 10px;
+        width: 40%;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .moredetails{
+        margin-right: 20px;
+        width: 170px;
+        height: 50px;
+        padding: 0px 35px;
+        .More{
+            font-size: x-small;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .str{
+            margin-left: 55%;
+            margin-top: -19%;
+            font-size: x-small;
+        }
+    }
+    .Последствия{
+        .cons{
+            margin-right: 50px;
+        }
+    }
+    .Иконки{
+        margin-top: 170px;
+    }
+    .cons{
+        opacity: 1;
+        font-size: small;
+        margin-bottom: 70px;
+    }
+    .consq{
+        margin-left: 110px;
+        margin-top: 80px;
+    }
+    .Иконки{
+        margin-right: 40px;
+        margin-bottom: 30px;
+        .i1{
+            .text1{
+                font-size:12px;
+                text-align: center;
+                opacity: 1;
+            }
+            .people{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .i2{
+            .text2{
+                opacity: 1;
+                text-align: center;
+                font-size: 12px;
+            }
+            .water{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .i3{
+            .text3{
+                opacity: 1;
+                text-align: center;
+                font-size: 12px;
+            }
+            .animals{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+        
+    .Шапка {
+        margin-right: 50px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        gap: 20px;
+    }
+        
+    .Опции {
+        margin-left: 10%;
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+    .Статья {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+        margin-left: -32%;
+        margin-top: 5%;
+    }
+        
+    .Etc {
+        width: 50%;
+        text-align: center;
+    }
+        
+    .moredetails {
+        padding: 2px 35px;
+        font-size: 16px;
+    }
+    .Последствия{
+        gap: 10px;
+        align-items: center;
+    }
+    .i1,.i2,.i3{
+        gap: 10px;
+        margin-top: 100px;
+        margin-right: 20px;
+        .animals{
+            width: 20px;
+            height: 20px;
+        }
+        .water{
+            width: 20px;
+            height: 20px;
+        }
+        .people{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .Socialmedia{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        margin-left: 45%;
+        width: 200px;
+        .ourct{
+            font-size: xx-small;
+        }
+        .instagramm{
+            .insta{
+                width: 25px;
+                height: 25px;
+            }
+            .linkins{
+                font-size:11px;
+            }
+        }
+        .phone{
+            .phn{
+            width: 30px;
+            height: 30px;
+            }
+            .number{
+            font-size: 10px;
+            }
+        }
+    }
+    .Email{
+        line-height: 0px;
+        margin-bottom: 40px;
+        margin-right: 20px;
+        .email{
+            font-size:xx-small;
+        }
+        .email1{
+            font-size: 10px;
+            margin-bottom: -15px;
+        }
+        .email2{
+            font-size:10px;
+        }
+    }
+    .Последствия{
+        .Иконки{
+            gap: 20px;
+        }
+    }
+}
+@media(max-width:370px) and (min-width:300px){
+    body{
+        overflow-x: hidden;
+        height: 150vh;
+        .Waterpl{
+            width: 100%;
+            height: 800px;
+        }
+    }
+    .Шапка{
+        margin-left: 35px;
+        gap: 10px;
+    }
+    .Опции{
+        margin-right: 50px;
+        gap: 10px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+        font-size: 5px;
+    }
+    .Logo{
+        width: 40px;
+        height: 40px;
+    }
+    .YTECH{
+        font-size:21px;
+    }
+    .Статья{
+        margin-left:-90px;
+        margin-top: 100px;
+    }
+    .Etc{
+        font-size: 10px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        .diag1{
+            height: 0px;
+            width: 0px;
+        }
+        .diag2{
+            height: 0px;
+            width: 0px;
+        }
+    }
+    .consq{
+        display: flex;
+        justify-content: center;
+        font-size: 0px;
+    }
+    .cons{
+        margin-left: -5px ;
+        font-size: 0px;
+    }
+    .Иконки{
+        margin-left: 50px;
+        margin-top: 180px;
+    }   
+    .f1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .Socialmedia, .Email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .Socialmedia{
+        margin-right:45%;
+    }
+    .instagramm, .phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .Опции{
+        gap: 15px;
+        .ABOUTUS,.PROJECT,.QUALITY{
+            font-size: 10px;
+        }
+    }
+    .Save{
+        margin-right: 20px ;
+        font-size: medium;
+    }
+    .Etc {
+        font-size: 10px;
+        width: 40%;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .moredetails{
+        margin-right: 20px;
+        width: 170px;
+        height: 50px;
+        padding: 0px 35px;
+        .More{
+            font-size: x-small;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .str{
+            margin-left: 55%;
+            margin-top: -19%;
+            font-size: x-small;
+        }
+    }
+    .Последствия{
+        .cons{
+            margin-right: 50px;
+        }
+    }
+    .Иконки{
+        margin-top: 170px;
+    }
+    .cons{
+        opacity: 1;
+        font-size: small;
+        margin-bottom: 70px;
+    }
+    .consq{
+        margin-left: 100px;
+        margin-top: 80px;
+    }
+    .Иконки{
+        margin-right: 50px;
+        margin-bottom: 30px;
+        .i1{
+            .text1{
+                font-size:12px;
+                text-align: center;
+                opacity: 1;
+            }
+            .people{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .i2{
+            .text2{
+                opacity: 1;
+                text-align: center;
+                font-size: 12px;
+            }
+            .water{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .i3{
+            .text3{
+                opacity: 1;
+                text-align: center;
+                font-size: 12px;
+            }
+            .animals{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+        
+    .Шапка {
+        margin-right: 50px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        gap: 20px;
+    }
+        
+    .Опции {
+        margin-left: 10%;
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+    .Статья {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+        margin-left: -32%;
+        margin-top: 5%;
+    }
+        
+    .Etc {
+        width: 50%;
+        text-align: center;
+    }
+        
+    .moredetails {
+        padding: 2px 35px;
+        font-size: 16px;
+    }
+    .Последствия{
+        gap: 10px;
+        align-items: center;
+    }
+    .i1,.i2,.i3{
+        gap: 10px;
+        margin-top: 100px;
+        .animals{
+            width: 20px;
+            height: 20px;
+        }
+        .water{
+            width: 20px;
+            height: 20px;
+        }
+        .people{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .Socialmedia{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        margin-left: 45%;
+        width: 200px;
+        .ourct{
+            font-size: xx-small;
+        }
+        .instagramm{
+            .insta{
+                width: 25px;
+                height: 25px;
+            }
+            .linkins{
+                font-size:11px;
+            }
+        }
+        .phone{
+            .phn{
+            width: 30px;
+            height: 30px;
+            }
+            .number{
+            font-size: 10px;
+            }
+        }
+    }
+    .Email{
+        line-height: 0px;
+        margin-bottom: 40px;
+        margin-right: -10px;
+        .email{
+            font-size:xx-small;
+        }
+        .email1{
+            font-size: 10px;
+            margin-bottom: -15px;
+        }
+        .email2{
+            font-size:10px;
+        }
+    }
+    .Последствия{
+        .Иконки{
+            gap: 20px;
+        }
+    }
+}
+@media(min-width:200px) and (max-width:300px){
+    body{
+        height: 70vh;
+        .Waterpl{
+            width: 100%;
+            height: 600px;
+        }
+    }
+    .Шапка{
+        margin-left: 35px;
+        gap: 10px;
+    }
+    .Опции{
+        margin-right: 50px;
+        gap: 10px;
+    }
+    .ABOUTUS,.PROJECT,.QUALITY{
+        margin-top: 5px;
+        font-size: 5px;
+    }
+    .Logo{
+        width: 40px;
+        height: 40px;
+    }
+    .YTECH{
+        font-size:21px;
+    }
+    .Статья{
+        margin-left:-100px;
+        margin-top: 100px;
+    }
+    .Etc{
+        font-size: 10px;
+    }
+    .Waterpl{
+        width: 100%;
+        height: 800px;
+    }
+    .Диаграммы1{
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        .diag1{
+            height: 0px;
+            width: 0px;
+        }
+        .diag2{
+            height: 0px;
+            width: 0px;
+        }
+    }
+    .consq{
+        display: flex;
+        justify-content: center;
+        font-size: 0px;
+    }
+    .cons{
+        margin-left: 20px ;
+        font-size: 0px;
+    }
+    .Иконки{
+        margin-left: 50px;
+        margin-top: 180px;
+    }   
+    .Socialmedia{
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        margin-left: 40%;
+        width: 200px;
+        .ourct{
+            font-size: xx-small;
+        }
+        .instagramm{
+            .insta{
+                width: 25px;
+                height: 25px;
+            }
+            .linkins{
+                font-size:11px;
+            }
+        }
+        .phone{
+            .phn{
+            width: 30px;
+            height: 30px;
+            }
+            .number{
+            font-size: 10px;
+            }
+        }
+    }
+    .Email{
+        line-height: 0px;
+        margin-top: 50px;
+        margin-right: 1px;
+        .email{
+            font-size:xx-small;
+        }
+        .email1{
+            font-size: 10px;
+            margin-bottom: -15px;
+        }
+        .email2{
+            font-size:10px;
+        }
+    }
+    .Опции{
+        gap: 15px;
+        .ABOUTUS,.PROJECT,.QUALITY{
+            font-size: 10px;
+        }
+    }
+    .Save{
+        margin-right: 40px;
+        font-size: medium;
+    }
+    .Etc {
+        font-size: 10px;
+        width: 40%;
+        text-align: justify;
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+    .moredetails{
+        margin-right: 40px;
+        width: 170px;
+        height: 50px;
+        padding: 0px 35px;
+        .More{
+            font-size: x-small;
+            width: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .str{
+            margin-left: 55%;
+            margin-top: -19%;
+            font-size: x-small;
+        }
+    }
+    .consq{
+        margin-top: 80px;
+    }
+    .Иконки{
+        margin-top: 170px;
+    }
+    .cons{
+        opacity: 0;
+        font-size: 0px;
+    }
+    .Иконки{
+        .i1{
+            .text1{
+                font-size: 0px;
+                opacity: 0;
+            }
+            .people{
+                width: 0px;
+                height: 0px;
+            }
+        }
+        .i2{
+            .text2{
+                opacity: 0;
+                font-size: 0px;
+            }
+            .water{
+                width: 0px;
+                height: 0px;
+            }
+        }
+        .i3{
+            .text3{
+                opacity: 0;
+                font-size: 0px;
+            }
+            .animals{
+                width: 0px;
+                height: 0px;
+            }
+        }
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+        
+    .Шапка {
+        margin-right: 50px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        gap: 20px;
+    }
+        
+    .Опции {
+        margin-left: 10%;
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+    .Статья {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+        margin-left: -32%;
+        margin-top: 5%;
+    }
+        
+    .Etc {
+        width: 50%;
+        text-align: center;
+    }
+        
+    .moredetails {
+        padding: 2px 35px;
+        font-size: 16px;
+    }
+    .Последствия{
+        align-items: center;
+    }
+    .i1,.i2,.i3{
+        margin-top: 100px;
+        margin-right: 20px;
+        .animals{
+            width: 20px;
+            height: 20px;
+        }
+        .water{
+            width: 20px;
+            height: 20px;
+        }
+        .people{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .f1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .Socialmedia, .Email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .Socialmedia{
+        margin-right:45%;
+    }
+    .instagramm, .phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .insta, .phn {
+        width: 50px;
+        height: auto;
+    }
+
+    .email1, .email2 {
+        font-size: 14px;
+    }
+}
