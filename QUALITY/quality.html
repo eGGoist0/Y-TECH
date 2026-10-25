@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quality.css">
+    <link rel="icon" type="image/png" href="/FOTOS/Logo.png">
+    <title>Quality</title>
+</head>
+<body>
+     <!--Задний фон-->
+    <img src="/FOTOS/Waterpollution.jpg" class="Waterpl">
+    <!--Шапка сайта-->
+    <header>
+        <div class="Шапка">
+            <a href="/MAIN_PAGE/index.html"><img src="/FOTOS/Logo.png" class="Logo"></a>
+            <a class="YTECH" href="/MAIN_PAGE/index.html">Y-TECH</a>
+        </div>
+         <div class="Опции">
+            <a href="/MAIN_PAGE/index.html" class="MAINPAGE" target="_blank">Main page</a>
+            <a href="/ABOUT_US/aboutus.html" class="ABOUTUS" target="_blank">About us</a>
+            <a href="/PROJECT/project.html" class="PROJECT" target="_blank">Project</a>
+        </div>
+    </header>
+
+    <main class="calculator">
+        <p class="Calculator">PH й Calculator</p>
+        <div class="volume">
+            <label class="V">Volume of the water :</label>
+            <input type="number" class="v" step="1" min="0" placeholder="liters">
+        </div>
+        
+        <div class="cph">
+            <label class="Nph">Current PH :</label>
+            <input type="number" class="cp" step="1" min="0" max="14" placeholder="mol/l"> 
+        </div>
+
+        <div class="dph">
+            <label class="Dph">Desired PH :</label>
+            <input type="number" class="dp" step="1" min="0" max="14" placeholder="mol/l">
+        </div>
+
+        <div class="con">
+            <label class="Cn">Neutralization constant :</label>
+            <input type="number" class="cn" step="1" min="0" max="100" placeholder="g/mol">
+        </div>
+        <button onclick="calcul()">Calculate</button>
+        <div class="result"></div>
+    </main>
+    <script src="/QUALITY/quality.js"></script>
+    <footer class="f1">  
+    <div class="Socialmedia">
+        <p class="ourct">Our contacts</p>
+        
+        <div class="instagramm">
+            <a href="https://www.instagram.com/ytech_bil/" target="_blank"><img src="/FOTOS/Component 9 (2).png" class="insta"></a>
+            <a href="https://www.instagram.com/ytech_bil/" target="_blank" class="linkins">Ytech bil</a>
+        </div>
+        <div class="phone">
+            <img class="phn" src="/FOTOS/Component 10.png">
+            <p class="number">7 707 929 2250</p>
+        </div>
+    </div>
+    <div class="Email">
+        <p class="email">Email adress</p>
+        <a href="https://mail.google.com/mail/" class="email1">ernurbekzhan09@gmail.com</a>
+        <a href="https://mail.google.com/mail/" class="email2">abdulkadyr514@gmail.com</a>
+    </div>
+</footer>
+</body>
+</html>

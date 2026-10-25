@@ -1,0 +1,789 @@
+/*Начало шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*Конец шрифтов*/
+
+a{
+    text-decoration: none;
+}
+/*Правила*/
+
+
+
+/*Задний фон*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    overflow-x: hidden;
+}
+.Waterpl{
+    position: absolute;
+    top: -1%;
+    width: 100% ;
+    height: 10%;   
+    opacity: 0;
+}
+.Шапка{
+    position: absolute;
+}
+header{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+
+
+
+/*Шапка сайта*/
+.Шапка{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 350px;
+    height: 80px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.Шапка:hover{
+    cursor: default;
+}
+.Logo{
+    width: 60px;
+    height: 60px;
+}
+.YTECH{
+    text-decoration: none;
+    font-family: 'Orbitron',cursive;
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 8px;
+}
+/*Шапки*/
+
+
+
+/*ОПЦИИ*/
+.Опции{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap:50px;
+    margin-top: 55px;
+    margin-left: 65%;
+    margin-right: 100px;
+}
+.MAINPAGE, .PROJECT, .ABOUTUS {
+    white-space: nowrap;
+    z-index: 1;
+    font-family: 'Orbitron', cursive;
+    font-size: medium;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.8s, 0.8s;
+}
+.MAINPAGE:hover, .PROJECT:hover, .ABOUTUS:hover {
+    font-size: larger;
+    color: rgb(176, 176, 176);
+    transition: 1s;
+    transition-delay: 0.1s;
+}
+
+.MAINPAGE:not(:hover), .PROJECT:not(:hover), .ABOUTUS:not(:hover) {
+    transition-delay: 0s; 
+}
+.Шапка:hover{
+    .Logo{
+        filter: invert();
+        width: 90px;
+        height: 90px;
+        transition: 1s;
+    }
+    .YTECH{
+        color:  rgb(176, 176, 176);
+        font-size: 35px;
+        transition: 1s;
+    }
+}
+.Шапка:not(:hover){
+    .Logo{
+        width: 70px;
+        height: 70px;
+        transition: 1s;
+    }
+    .YTECH{
+        transition: 1s;
+    }
+}
+/*КОНЕЦ ШАПКИ*/
+
+
+/*Калькулятор*/
+main{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Calculator{
+    font-size:  large;
+    font-weight: 500;
+    font-family: 'Orbitron',cursive;
+}
+.calculator{
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 220px;
+    margin-right: 50px;
+}
+.volume{
+    margin-top: 30px
+}
+.V{
+    font-family: 'Outfit',cursive;
+}
+.v{
+    font-family: 'Outfit',cursive;
+    margin-left: 5px;
+    align-items: center;
+}
+
+.cph{
+    margin-top: 40px;
+}
+.Nph{
+    font-family: 'Outfit',cursive;
+}
+.cp{
+    font-family: 'Outfit',cursive;
+    margin-left:5px;
+    align-items: center;
+}
+
+
+.dph{
+    margin-top: 40px;
+}
+.Dph{
+    font-family: 'Outfit',cursive;
+}
+.dp{
+    font-family: 'Outfit',cursive;
+    margin-left:5px;
+    align-items: center;
+}
+
+.con{
+    margin-top: 40px;
+}
+.Cn{
+    font-family: 'Outfit',cursive;
+}
+.cn{
+    font-family: 'Outfit',cursive;
+    margin-left: 5px;
+    align-items: center;
+}
+button{
+    margin-top:30px ;
+    border: 10px,cursive;
+    font-size: large; 
+    letter-spacing: 3px;
+    padding-top: 6px;
+    padding-bottom:6px;
+    padding-left: 105px;
+    padding-right:105px;
+    font-family: 'Outfit',cursive;
+}
+.result{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    font-family: 'Outfit',cursive;
+    border-radius:3%;
+    border: 2px,solid;
+    border-color: black;
+    width: 500px;
+    height: 360px;
+    background-color: whitesmoke;
+}
+
+
+
+/*FOOTER*/
+.f1{
+    display: flex;
+    gap:0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:3 0%;
+    width: 101%;
+    height: 30%;
+    opacity: 1; 
+    background-color: black;
+}
+.Socialmedia{
+    z-index: 1;
+    width: 100%;
+    margin-left: 150px;
+    align-items: start;
+    font-family: 'Outfit',cursive;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    .ourct{
+        font-size: x-large;
+        color: white;
+    }
+    .insta{
+        width: 50px;
+        height: 50px;
+    }
+    .instagramm{
+        color: white;
+        display: flex;
+        flex-direction:row ;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+        font-size: medium;
+        margin-left: -10px;
+        gap:10px
+    }
+    .linkins{
+        color: white;
+        margin-bottom: 5px;
+    }
+    .phone{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -10px;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .phn{
+        width: 50px;
+        height: 50px;
+    }
+    .number{
+        color: white;
+        font-weight: normal;
+        font-size: x-small;
+    }
+}
+
+.instagramm:hover,.phone:hover{
+    .insta{
+        width:60px;
+        height: 60px;
+        filter: invert();
+        transition: 1s;
+    }
+    .phn{
+        width: 57px;
+        height: 57px;
+        filter: invert();
+        transition: 1s;
+    }
+    .number{
+        font-size: medium;
+        transition: 0.9s;
+    }
+    font-size: 22px;
+    filter: brightness(0.8);
+    transition: 0.9s;
+    cursor: pointer;
+}
+.instagramm:not(:hover),.phone:not(:hover){
+    transition: 1s;
+    .phn{
+        width: 50px;
+        height: 50px;
+        transition: 0.9s;
+    }
+    .insta{
+        width: 50px;
+        height: 50px;
+        transition: 0.9s;
+    }
+    .number{
+        font-size: small;
+        transition: 0.9s;
+    }
+}
+
+.Email{
+    z-index: 1;
+    color: white;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+    font-weight: bold;
+    font-family: 'Outfit',cursive;
+}
+.email1,.email2{
+    color: white;
+    display: flex;
+    margin-top: -10px;
+    line-height: 70px;
+    font-weight:normal;
+}
+.email{
+    color: white;
+    font-size: x-large;
+}
+.email:hover{
+    cursor: pointer;
+}
+.email1:hover,.email2:hover{
+    font-size:23px ;
+    filter: brightness(0.8);
+    transition: 1s;
+}
+.email1:not(:hover),.email2:not(:hover){
+    transition: 1s;
+}
+.ABOUTUS,.PROJECT,.QUALITY{
+    padding-left: 10px;
+}
+
+.Шапка{
+    position: absolute;
+}
+header{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    text-decoration: none;
+}
+
+
+
+/*Adaptation*/
+@media(max-width:1000px) and (min-width:750px){
+    .Опции{
+        margin-right: 70px;
+        .ABOUTUS,.MAINPAGE,.PROJECT{
+            font-size: small;
+        }
+        gap: 20px;
+    }
+    .Шапка{
+        gap: 20px;
+        margin-left: 70px;
+    }
+    .YTECH{
+        font-size: large;
+    }
+    .Logo{
+        transform: scale(0.9);
+    }
+    .f1{
+        .ourct{
+            font-size: large;
+        }  
+        .email{
+            font-size: large;
+        }
+    }
+    .Socialmedia{
+        margin-left: 80px;
+    }
+    .Email{
+        margin-right: 80px;
+    }
+}
+
+@media(max-width:750px) and (min-width:500px){
+    .f1{
+        .ourct{
+            font-size: large;
+        }  
+        .email{
+            font-size: large;
+        }
+    }
+    .Socialmedia{
+        margin-left: 80px;
+    }
+    .Email{
+        margin-right: 80px;
+    }
+    .Шапка{
+        margin-left: 80px;
+        .YTECH{
+            font-size: large;
+        }
+        .Logo{
+            transform: scale(0.9);
+        }
+    }
+    .Опции{
+        margin-right: 80px;
+        gap: 30px;
+        .PROJECT,.QUALITY,.MAINPAGE{
+            font-size: x-small;
+        }
+    }
+    .Socialmedia{
+        margin-left: 100px;
+        .ourct{
+            font-size: large;
+        }
+        .instagramm{
+            .insta{
+                width: 45px;
+                height:45px;
+            }
+            .linkins{
+                font-size: small;
+            }
+        }
+    }
+    .Email{
+        margin-right: 90px;
+        .email{
+            font-size: large;
+        }
+        .email1{
+            font-size: small;
+        }
+        .email2{
+            font-size: small;
+        }
+    }
+}
+@media(max-width:750px) and (min-width:450px){
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .result{
+        margin-left: 20px;
+        width: 400px;
+    }
+    body{
+        height: 120vh;
+    }
+    .Шапка {
+        display: flex;
+        align-items: center;
+        margin-right: 150px;
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .Logo {
+        height: 50px; 
+        margin-right: 10px;
+    }
+    
+    .YTECH {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    body{
+        width: 100%;
+    }
+    .Опции {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    .ABOUTUS{
+        font-size: xx-small;
+    }
+    .Опции a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .st{
+        justify-content: center;
+        margin-top: 350px;
+    }
+    .Socialmedia{
+        .ourct{
+            font-size: small;
+        }
+        .instagramm{
+            .insta{
+                width: 40px;
+                height: 40px;
+            }
+            .linkins{
+                font-size: xx-small;
+            }
+        }
+        .phone{
+            .phn{
+                width: 40px;
+                height: 40px;
+            }
+            .number{
+                font-size: xx-small;
+            }
+        }
+        margin-left: 50px;
+    }
+    .Email{
+        .email{
+            font-size: small;
+        }
+        .email1{
+            font-size: xx-small;
+        }
+        .email2{
+            font-size: xx-small;
+        }
+        margin-right: 50px;
+        align-items: start;
+    }
+    .volume{
+        .v{
+            width: 100px;
+        }
+    }
+}
+@media(max-width:450px){
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .calculator{
+        width: 100%;
+        margin-top: 200px;
+    }
+    .result{
+        margin-left: 20px;
+        width: 400px;
+    }
+    body{
+        height: 120vh;
+    }
+    .Шапка {
+        display: flex;
+        align-items: center;
+        margin-right: 150px;
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+        
+    .Logo {
+        height: 50px; 
+        margin-right: 10px;
+    }
+        
+    .YTECH {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    .Calculator{
+        margin-top: 100px;
+        font-size: x-small;
+        letter-spacing: 1px;
+    }   
+    body{
+        width: 100%;
+    }
+    .Опции {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 250px;
+        margin-left: 100px;
+    }
+    .Опции a {
+        text-decoration: none;
+        color: #333;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .st{
+        justify-content: center;
+        margin-top: 350px;
+    }
+    .f1{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Socialmedia{
+        margin-left: 20px;
+        .ourct{
+          font-size: medium;
+        }
+        .instagramm{
+          gap: 5px;
+        }
+        .insta{
+          transform: scale(0.8);
+        }
+        .linkins{
+          font-size: 12px;
+          margin-bottom: 0px;
+        }
+    
+        .phn{
+          transform: scale(0.8);
+        }
+        .phone{
+          gap: 5px;
+          .number{
+            font-size: 12px;
+          }
+        }
+      }
+      .Email{
+        margin-right: -30px;
+        .email{
+          font-size: medium;
+        }
+        .email1{
+          font-size: 10px;
+        }
+        .email2{
+          font-size: 10px;
+        }
+      }
+      .start{
+        max-width:50%;  
+      }
+      .legends{
+        gap: 30px;
+        .filters{
+          .fil{
+            font-size: x-small;
+          }
+        }
+        .motors{
+          .mot{
+            font-size: x-small;
+          }
+        }
+        .sensor{
+          .sen{
+            font-size: x-small;
+          }
+        }
+      }
+       .f1 {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+         padding: 40px;
+         margin-left: -50px;
+     }
+     .Socialmedia {
+        width: 100%; 
+        display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+     }
+     
+     .instagramm, .phone {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 5px;
+     }
+     
+     .Email {
+         margin-top: 50px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+     }    
+    .volume{
+        .v{
+            width: 100px;
+        }
+        .V{
+            font-size: xx-small;
+        }
+    }   
+    .cph{
+        .Nph{
+            font-size: xx-small;
+        }
+    }
+    .dph{
+        .Dph{
+            font-size: xx-small;
+        }
+    }
+    .con{
+        .Cn{
+            font-size: xx-small;
+        }
+    }
+    input{
+        height: 20px;
+        width: 40px;
+    }
+    button{
+        padding: 10px 20px;
+    }
+   .result{
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 300px;
+    }
+    .volume{
+        .v{
+            width: 40px;
+        }
+    }
+}
