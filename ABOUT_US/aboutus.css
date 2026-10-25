@@ -1,0 +1,1311 @@
+/*Начало шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*Конец шрифтов*/
+
+/*Правила*/
+a{
+    text-decoration: none;
+}
+.zalp{
+    margin-top: -20px;
+    z-index: 1  ;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 73%;
+    opacity: 0;
+}
+/*Правила*/
+
+
+
+/*Задний фон*/
+body{
+    margin: 0;
+    padding: 0;
+    height: 290vh;
+    overflow-x: hidden;
+}
+.Waterpl{
+    z-index: 0;
+    position: absolute;
+    top: -1%;
+    width: 100% ;   
+    opacity: 0;
+}
+.Шапка{
+    position: absolute;
+}
+header{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+
+
+
+/*Шапка сайта*/
+.Шапка{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 350px;
+    height: 80px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.Шапка:hover{
+    cursor: default;
+}
+.Logo{
+    width: 60px;
+    height: 60px;
+}
+.YTECH{
+    text-decoration: none;
+    font-family: 'Orbitron',cursive;
+    font-size: x-large;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 8px;
+}
+/*Шапки*/
+
+
+
+/*ОПЦИИ*/
+.Опции{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap:50px;
+    margin-top: 55px;
+    margin-left: 65%;
+    margin-right: 100px;
+}
+.MAINPAGE, .PROJECT, .QUALITY {
+    white-space: nowrap;
+    z-index: 1;
+    font-family: 'Orbitron', cursive;
+    font-size: medium;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.8s, 0.8s;
+}
+.MAINPAGE:hover, .PROJECT:hover, .QUALITY:hover {
+    font-size: larger;
+    color: rgb(176, 176, 176);
+    transition: 1s;
+    transition-delay: 0.1s;
+}
+
+.MAINPAGE:not(:hover), .PROJECT:not(:hover), .QUALITY:not(:hover) {
+    transition-delay: 0s; 
+}
+.Шапка:hover{
+    .Logo{
+        filter: invert();
+        width: 90px;
+        height: 90px;
+        transition: 1s;
+    }
+    .YTECH{
+        color:  rgb(176, 176, 176);
+        font-size: 35px;
+        transition: 1s;
+    }
+}
+.Шапка:not(:hover){
+    .Logo{
+        width: 70px;
+        height: 70px;
+        transition: 1s;
+    }
+    .YTECH{
+        transition: 1s;
+    }
+}
+/*КОНЕЦ ШАПКИ*/
+
+
+/*OUR TEAM*/
+.st {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 7px;
+    font-size: large;
+    font-weight:1000;
+    font-family: 'Orbitron', cursive;
+    margin-top: 25%;
+}
+.stmr {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    letter-spacing: 9px;
+    font-weight: bold;
+    font-family: 'Outfit', cursive;
+    font-weight: bold;
+}
+.stmm {
+    display: flex;
+    font-weight: 500;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    line-height: 25px;
+    font-family: 'Outfit', cursive;
+    margin-top: 70px;
+}
+
+
+
+/*Engineers*/
+.engi{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    font-size: xx-large;
+    font-family: 'Orbitron',cursive;
+}
+.KEMENGER{
+    font-family: 'Orbitron',cursive;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.kema1{
+    width: 300px;
+    height: 350px;
+}
+.kema2{
+    width: 300px;
+    height: 350px;
+    opacity: 0;
+}
+.kema2{
+    position: absolute;
+}
+
+.KADIR{
+    font-family: 'Orbitron',cursive;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.kadi{
+    margin-left: 20px;
+}
+.kadi1{
+    width: 300px;
+    height: 350px;
+}
+.kadi2{
+    margin-top: -10px;
+    width: 300px;
+    height: 350px;
+    opacity: 0;
+}
+.kadi2{
+    position: absolute;
+}
+.engin{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.engin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.engineers-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.KEMENGER, .KADIR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.KEMENGER img, .KADIR img {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.pm{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    font-size: xx-large;
+    font-family: 'Orbitron',cursive;
+}
+.ERNUR{
+    font-family: 'Orbitron',cursive;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.era1{
+    width: 300px;
+    height: 350px;
+}
+.era2{
+    margin-top: -10px;
+    width: 300px;
+    height: 350px;
+    opacity: 0;
+}
+.era2{
+    position: absolute;
+}
+
+.ESEN{
+    font-family: 'Orbitron',cursive;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.esen{
+    margin-left: 20px;
+}
+.esen1{
+    width: 300px;
+    height: 350px;
+}
+.esen2{
+    margin-top: -10px;
+    width: 300px;
+    height: 350px;
+    opacity: 0;
+}
+.esen2{
+    position: absolute;
+}
+.pmn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pmn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.pm-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.ERNUR, .ESEN {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.ERNUR img, .ESEN img {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.coder{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    font-size: xx-large;
+    font-family: 'Orbitron',cursive;
+}
+.ALI{
+    font-family: 'Orbitron',cursive;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.ali1{
+    width: 300px;
+    height: 350px;
+}
+.ali2{
+    margin-top: -10px;
+    width: 300px;
+    height: 350px;
+    opacity: 0;
+}
+.ali2{
+    position: absolute;
+}
+
+.ABDU{
+    font-family: 'Orbitron',cursive;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.abdu{
+    margin-left: 20px;
+}
+.abdu1{
+    width: 300px;
+    height: 350px;
+}
+.abdu2{
+    margin-top: -10px;
+    width: 300px;
+    height: 350px;
+    opacity: 0;
+}
+.abdu2{
+    position: absolute;
+}
+.codern{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.codern {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.coder-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.ABDU, .ALI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.ALI img, .ABDU img {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.mascot{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    font-size: xx-large;
+    font-family: 'Orbitron',cursive;
+}
+.BEKA{
+    margin-right: 20px;
+    font-family: 'Orbitron',cursive;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.beka{
+    margin-left: 20px;
+}
+.beka1{
+    width: 300px;
+    height: 350px;
+}
+.beka2{
+    width: 300px;
+    height: 350px;
+    opacity: 0;
+}
+.beka2{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.mascotn{
+    display: flex;
+    justify-content: center;
+}
+
+.stft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mascotn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.BEKZAT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.BEKZAT img {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*FOOTER*/
+.f1{
+    display: flex;
+    gap:0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:20%;
+    width: 101%;
+    height: 55%;
+    opacity: 1; 
+    background-color: black;
+}
+.Socialmedia{
+    z-index: 1;
+    width: 400px;
+    margin-left: 150px;
+    align-items: start;
+    font-family: 'Outfit',cursive;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    .ourct{
+        font-size: x-large;
+        color: white;
+    }
+    .insta{
+        width: 50px;
+        height: 50px;
+    }
+    .instagramm{
+        color: white;
+        display: flex;
+        flex-direction:row ;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+        font-size: medium;
+        margin-left: -10px;
+        gap:10px
+    }
+    .linkins{
+        color: white;
+        margin-bottom: 5px;
+    }
+    .phone{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -10px;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .phn{
+        width: 50px;
+        height: 50px;
+    }
+    .number{
+        color: white;
+        font-weight: normal;
+        font-size: x-small;
+    }
+}
+
+.instagramm:hover,.phone:hover{
+    .insta{
+        width:60px;
+        height: 60px;
+        filter: invert();
+        transition: 1s;
+    }
+    .phn{
+        width: 57px;
+        height: 57px;
+        filter: invert();
+        transition: 1s;
+    }
+    .number{
+        font-size: medium;
+        transition: 0.9s;
+    }
+    font-size: 22px;
+    filter: brightness(0.8);
+    transition: 0.9s;
+    cursor: pointer;
+}
+.instagramm:not(:hover),.phone:not(:hover){
+    transition: 1s;
+    .phn{
+        width: 50px;
+        height: 50px;
+        transition: 0.9s;
+    }
+    .insta{
+        width: 50px;
+        height: 50px;
+        transition: 0.9s;
+    }
+    .number{
+        font-size: small;
+        transition: 0.9s;
+    }
+}
+
+.Email{
+    z-index: 1;
+    color: white;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+    font-weight: bold;
+    font-family: 'Outfit',cursive;
+}
+.email1,.email2{
+    color: white;
+    display: flex;
+    margin-top: -10px;
+    line-height: 70px;
+    font-weight:normal;
+}
+.email{
+    color: white;
+    font-size: x-large;
+}
+.email:hover{
+    cursor: pointer;
+}
+.email1:hover,.email2:hover{
+    font-size:23px ;
+    filter: brightness(0.8);
+    transition: 1s;
+}
+.email1:not(:hover),.email2:not(:hover){
+    transition: 1s;
+}
+.ABOUTUS,.PROJECT,.QUALITY{
+    padding-left: 10px;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.Waterpl{
+    z-index: 0;
+    position: absolute;
+    top: -1%;
+    width: 100% ;   
+    height: 1000px;
+    opacity: 0;
+}
+.Шапка{
+    position: absolute;
+}
+header{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    text-decoration: none;
+}
+
+.BEKA:hover{
+    .beka1{
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .beka2{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .beka{
+        color: rgb(187, 187, 187);
+        transform: translateY(-10px);
+        transition: 0.8s;
+    }
+}
+.BEKA:not(:hover){
+    .beka1{
+        transition: 0.3s;
+    }
+    .beka2{
+        transition: 0.2s;
+    }
+    .beka{
+        transition: 0.8s;
+    }
+}
+
+.ALI:hover{
+    .ali1{
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .ali2{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .ali{
+        color: rgb(187, 187, 187);
+        transform: translateY(-10px);
+        transition: 0.8s;
+    }
+}
+.ALI:not(:hover){
+    .ali1{
+        transition: 0.3s;
+    }
+    .ali2{
+        transition: 0.2s;
+    }
+    .ali{
+        transition: 0.8s;
+    }
+}
+
+.ABDU:hover{
+    .abdu1{
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .abdu2{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .abdu{
+        color: rgb(187, 187, 187);
+        transform: translateY(-10px);
+        transition: 0.8s;
+    }
+}
+.ABDU:not(:hover){
+    .abdu1{
+        transition: 0.3s;
+    }
+    .abdu2{
+        transition: 0.2s;
+    }
+    .abdu{
+        transition: 0.8s;
+    }
+}
+
+.ERNUR:hover{
+    .era1{
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .era2{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .era{
+        color: rgb(187, 187, 187);
+        transform: translateY(-10px);
+        transition: 0.8s;
+    }
+}
+.ERNUR:not(:hover){
+    .era1{
+        transition: 0.3s;
+    }
+    .era2{
+        transition: 0.2s;
+    }
+    .era{
+        transition: 0.8s;
+    }
+}
+.ESEN:hover{
+    .esen1{
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .esen2{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .esen{
+        color: rgb(187, 187, 187);
+        transform: translateY(-10px);
+        transition: 0.8s;
+    }
+}
+.ESEN:not(:hover){
+    .esen1{
+        transition: 0.3s;
+    }
+    .esen2{
+        transition: 0.2s;
+    }
+    .esen{
+        transition: 0.8s;
+    }
+}
+
+.KEMENGER:hover{
+    .kema1{
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .kema2{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .kema{
+        color: rgb(187, 187, 187);
+        transform: translateY(-10px);
+        transition: 0.8s;
+    }
+}
+.KEMENGER:not(:hover){
+    .kema1{
+        transition: 0.3s;
+    }
+    .kema2{
+        transition: 0.2s;
+    }
+    .kema{
+        transition: 0.8s;
+    }
+}
+
+.KADIR:hover{
+    .kadi1{
+        opacity: 0;
+        transition: 0.2s;
+    }
+    .kadi2{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .kadi{
+        color: rgb(187, 187, 187);
+        transform: translateY(-10px);
+        transition: 0.8s;
+    }
+}
+.KADIR:not(:hover){
+    .kadi1{
+        transition: 0.3s;
+    }
+    .kadi2{
+        transition: 0.2s;
+    }
+    .kadi {
+        transition: 0.8s;
+    }
+}
+
+/*ADAPTATION*/
+@media(max-width:1000px) and (min-width:880px){
+    .Шапка{
+        .YTECH{
+            font-size: large;
+        }
+        .Logo{
+            transform: scale(0.9);
+        }
+    }
+    .Опции{
+        .PROJECT,.QUALITY,.MAINPAGE{
+            font-size: x-small;
+        }
+    }
+    .Socialmedia{
+        margin-left: 100px;
+    }
+    .Email{
+        margin-right: 90px;
+    }
+}
+@media(max-width:880px) and (min-width:750px){
+    .Шапка{
+        margin-left: 80px;
+        .YTECH{
+            font-size: large;
+        }
+        .Logo{
+            transform: scale(0.9);
+        }
+    }
+    .Опции{
+        margin-right: 80px;
+        gap: 30px;
+        .PROJECT,.QUALITY,.MAINPAGE{
+            font-size: x-small;
+        }
+    }
+    .Socialmedia{
+        margin-left: 100px;
+        .ourct{
+            font-size: large;
+        }
+        .instagramm{
+            .insta{
+                width: 45px;
+                height:45px;
+            }
+            .linkins{
+                font-size: small;
+            }
+        }
+    }
+    .Email{
+        margin-right: 90px;
+        .email{
+            font-size: large;
+        }
+        .email1{
+            font-size: small;
+        }
+        .email2{
+            font-size: small;
+        }
+    }
+}
+@media(max-width:750px) and (min-width:450px){
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .Шапка {
+        display: flex;
+        align-items: center;
+        margin-right: 150px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .Logo {
+        height: 50px; 
+        margin-right: 10px;
+    }
+    
+    .YTECH {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    body{
+        width: 100%;
+    }
+    .Опции {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 250px;
+        margin-left: 100px;
+    }
+    .Опции a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .st{
+        justify-content: center;
+        margin-top: 350px;
+    }
+    .Socialmedia{
+        .ourct{
+            font-size: small;
+        }
+        .instagramm{
+            .insta{
+                width: 40px;
+                height: 40px;
+            }
+            .linkins{
+                font-size: xx-small;
+            }
+        }
+        .phone{
+            .phn{
+                width: 40px;
+                height: 40px;
+            }
+            .number{
+                font-size: xx-small;
+            }
+        }
+        margin-left: 50px;
+    }
+    .Email{
+        .email{
+            font-size: small;
+        }
+        .email1{
+            font-size: xx-small;
+        }
+        .email2{
+            font-size: xx-small;
+        }
+        margin-right: 50px;
+        align-items: start;
+    }
+    .mascot{
+        font-size: x-large;
+    }
+    .coder{
+        font-size: x-large;
+    }
+    .pm{
+        font-size: large;
+    }
+    .engi{
+        font-size: x-large;
+    }
+    .stmm{
+        letter-spacing: 2px;
+    }
+    .stft{
+        width: 100%;
+    }
+    .st{
+        font-size: 15px;
+    }
+    .stmr{
+        font-size: 22px;
+    }
+
+.stft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.engin, .pmn, .codern, .mascotn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.engineers-container, .pm-container, .coder-container, .mascot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.KEMENGER, .KADIR, .ERNUR, .ESEN, .ALI, .ABDU, .BEKA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+}
+
+img {
+    width: 150px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+}
+
+
+@media(max-width:450px) and (min-width:200px){
+    .f1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 40px;
+        margin-left: -50px;
+    }
+    .Socialmedia {
+       width: 100%; 
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .instagramm, .phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .Email {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .Шапка {
+        display: flex;
+        align-items: center;
+        margin-right: 150px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .Logo {
+        height: 50px; 
+        margin-right: 10px;
+    }
+    
+    .YTECH {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    header{
+        margin: 20px;
+    }
+    body{
+        margin: 20px;
+        width: 100%;
+        height: 130vh;
+    }
+    .Опции {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 250px;
+        margin-left: 100px;
+    }
+    .Опции a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .st{
+        justify-content: center;
+        margin-top: 350px;
+    }
+    .Socialmedia{
+        width: 100%;
+        .ourct{
+            font-size: small;
+        }
+        .instagramm{
+            .insta{
+                width: 40px;
+                height: 40px;
+            }
+            .linkins{
+                font-size: xx-small;
+            }
+        }
+        .phone{
+            .phn{
+                width: 40px;
+                height: 40px;
+            }
+            .number{
+                font-size: xx-small;
+            }
+        }
+        margin-left: 0px;
+    }
+    .Email{
+        .email{
+            font-size: small;
+        }
+        .email1{
+            font-size: xx-small;
+        }
+        .email2{
+            font-size: xx-small;
+        }
+        margin-right: 0px;
+        align-items: center;
+    }
+    .mascot{
+        font-size: x-large;
+    }
+    .coder{
+        font-size: x-large;
+    }
+    .pm{
+        font-size: medium;
+    }
+    .engi{
+        font-size: x-large;
+    }
+    .stmm{
+        letter-spacing: 2px;
+    }
+    .stft{
+        width: 100%;
+    }
+    .st{
+        font-size: 15px;
+    }
+    .stmr{
+        font-size: 22px;
+    }
+    img:not(.insta):not(.number){
+        width: 200px;
+        height: 200px;
+    }
+.stft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.engin, .pmn, .codern, .mascotn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.engineers-container, .pm-container, .coder-container, .mascot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+.KEMENGER, .KADIR, .ERNUR, .ESEN, .ALI, .ABDU, .BEKA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+}
+
+img {
+    width: 150px; 
+    height: 180px;
+    border-radius: 10px; 
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.zalp{
+    margin-right: 100px;
+}
+}    
