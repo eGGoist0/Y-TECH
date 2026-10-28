@@ -207,7 +207,8 @@ button{
     font-family: 'Outfit',cursive;
 }
 .result{
-    margin-top: 200px;
+    margin-top: 150px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
