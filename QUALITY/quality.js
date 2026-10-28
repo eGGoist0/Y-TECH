@@ -1,4 +1,3 @@
-// script.js
 function calcul() {
     let volume = parseFloat(document.querySelector(".v").value);
     let currentPh = parseFloat(document.querySelector(".cp").value);
